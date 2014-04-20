@@ -1,0 +1,33 @@
+<div class="col-md-6">
+	<div class="col-md-3 avatar-padding">
+		<%= image_tag current_user.avatar.url(:thumb), class: "home-avatar" %>
+	</div>
+
+	<div class="col-md-9">
+		<h4><%= current_user.full_name %></h4>
+		<p> 
+			<%= current_user.email %>
+			<br><%= current_user.telephone %>
+		</p>
+		<%= link_to "Mettre à jour", edit_user_registration_path, class: "btn btn-lg btn-inverse" %>
+	</div>	
+</div>
+
+<div class="col-md-6">
+	<h4>Mes amis</h4>
+	<p>. .
+	<br>..</p>
+
+	<a href="#" class="btn btn-lg btn-inverse" style="float: right">Ajouter des amis</a>
+
+</div>
+
+<div style="clear: both"></div>
+
+<div class="col-md-12 event-title">
+	<h4>Mes événements</h4>
+</div>
+
+<div class="col-md-12">
+	<p>exemple d'evenement</p>
+</div>
